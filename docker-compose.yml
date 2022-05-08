@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  app:
+    build: .
+    command: npm start
+    environment:
+      - PORT=80
+    ports:
+      - "80:80"
+    container_name: myapp
+    image: myapp:v1
+    networks:
+      - my_network
+     
+networks:
+  my_network:

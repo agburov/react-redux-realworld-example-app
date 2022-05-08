@@ -1,0 +1,7 @@
+FROM nginx:alpine
+
+WORKDIR /usr/share/nginx/html/
+COPY public ./public
+COPY src ./src
+COPY package.json ./package.json
+COPY project-logo.png ./project-logo.png
