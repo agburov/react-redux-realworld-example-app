@@ -1,0 +1,8 @@
+FROM alpine/node
+ENV PORT=80
+WORKDIR /opt/app
+COPY ./build /opt/app/build
+RUN npm install -g serve
+RUN adduser test -D -h /opt
+USER test
+CMD serve -s build

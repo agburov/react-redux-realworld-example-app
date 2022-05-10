@@ -1,8 +1,11 @@
 #Ignore node_modules folder
 node_modules/
 
-#Ignore dockerfile itself
-dockerfile
+#Ignore dockerfiles
+Dockerfile
+Dockerfile.static
+docker-compose.yml
+.dockerignore
 
 #Ignore the git and cache folders
 .git
