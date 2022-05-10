@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM alpine
 WORKDIR /opt/app/
 ENV PORT=80
 COPY ./ ./
