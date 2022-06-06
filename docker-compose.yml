@@ -6,6 +6,7 @@ services:
       - "80:80"
     container_name: myapp
     image: myapp:v1
+    restart: always
     networks:
       - my_network
      
